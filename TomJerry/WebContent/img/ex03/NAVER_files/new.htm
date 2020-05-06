@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html><div style="display: none;"><input type="input" name="jindo1586331771474"></div><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		
+		<link rel="stylesheet" type="text/css" href="new_data/myarea.css">
+	
+<script type="text/javascript" charset="utf-8" src="new_data/uglified_my_190702.js"></script><script src="new_data/getProfile.js"></script><script type="text/javascript" charset="utf-8" src="new_data/jindo.js"></script></head>
+<body>
+<div class="my_area">
+	<div class="profile">
+		<div class="user_area">
+			<div class="user_info">
+				<a href="https://nid.naver.com/user2/api/route.nhn?m=routePcProfileModification" target="_parent" class="user_thumbnail" onclick="clickcr(this, 'nmy.profile', '', '', event);My.movePage('https://nid.naver.com/user2/api/route.nhn?m=routePcProfileModification');return false;">
+					<span class="mask"></span>
+					<img id="profile_image" src="new_data/image.jpg" alt="설찌 님" width="56" height="56">
+				</a>
+				<div class="private">
+					<span class="user_name"><a href="https://nid.naver.com/user2/api/route.nhn?m=routePcProfileModification" target="_parent" onclick="clickcr(this, 'nmy.idname', '', '', event);My.movePage('https://nid.naver.com/user2/api/route.nhn?m=routePcProfileModification');return false;"><strong id="user_name">설찌</strong>님</a></span>
+					<a href="https://nid.naver.com/user2/api/route.nhn?m=routePcMyInfo" target="_parent" class="link_myinfo" onclick="clickcr(this, 'nmy.modify', '', '', event);My.movePage('https://nid.naver.com/user2/api/route.nhn?m=routePcMyInfo');return false;">내정보</a>
+					<a href="https://nid.naver.com/user2/help/myInfo.nhn?m=viewSecurity&amp;menu=security" target="_parent" class="set_login_protect" onclick="clickcr(this, 'nmy.caution', '', '', event);My.movePage('https://nid.naver.com/user2/help/myInfo.nhn?m=viewSecurity&amp;menu=security');return false;"><i class="blind">로그인 보호 설정</i></a>
+				</div>
+				<div class="my_service">
+					<a href="https://nid.naver.com/nidlogin.logout?returl=https://www.naver.com/" target="_parent" id="btn_logout" class="btn_logout"><span class="btn_inr">로그아웃</span></a>
+					<span class="link_cover"><a id="mail_count_profile" href="https://mail.naver.com/" target="_parent" class="link_mail" onclick="clickcr(this, 'nmy.mailtit', '', '', event);My.movePage('https://mail.naver.com');return false;"><i>메일</i><span class="cnt">0</span></a></span>
+					<span class="link_cover"><a id="note_count_profile" href="https://note.naver.com/" target="_parent" class="link_note" onclick="clickcr(this, 'nmy.note', '', '', event);My.movePage('https://note.naver.com');return false;"><i>쪽지</i><span class="cnt">66</span></a></span>
+				</div>
+			</div>
+
+		</div>
+		<div class="service_tab">
+			<div id="slide_cover" class="slide_cover">
+				
+				<div class="service_list" id="service_tab_list" style="left: 0px; transition: left 0.3s ease-in-out 0s;"><ul class="page_right"><li onclick="clickcr(this, 'nmy.alert', '', '', event);myCore.toggleService('noti');return false;"><a href="https://noti.naver.com/index.nhn" class="tab_noti" onkeydown="myCore.keydownServiceTab(event, 0)"><i>알림</i><span id="noti_count" class="b_cnt" style=""><em>6</em><i class="arrow_down"></i></span></a></li><li onclick="clickcr(this, 'nmy.cafe', '', '', event);myCore.toggleService('cafe');return false;"><a href="https://section.cafe.naver.com/" class="tab_cafe" onkeydown="myCore.keydownServiceTab(event, 1)"><i>카페</i><span id="cafe_count" class="b_cnt" style=""><em>311</em><i class="arrow_down"></i></span></a></li><li onclick="clickcr(this, 'nmy.mail', '', '', event);myCore.toggleService('mail');return false;"><a href="https://mail.naver.com/" class="tab_mail" onkeydown="myCore.keydownServiceTab(event, 2)"><i>메일</i><span id="mail_count" class="b_cnt" style="display: none"></span></a></li><li onclick="clickcr(this, 'nmy.ndrive', '', '', event);myCore.toggleService('ndrive');return false;"><a href="https://cloud.naver.com/" class="tab_ndrive" onkeydown="myCore.keydownServiceTab(event, 3)"><i>클라우드</i><span id="ndrive_count" class="b_cnt" style=""><em>N</em><i class="arrow_down"></i></span></a></li><li onclick="clickcr(this, 'nmy.sst', '', '', event);myCore.toggleService('feed');return false;"><a href="https://myfeed.naver.com/" class="tab_feed" onkeydown="myCore.keydownServiceTab(event, 4)"><i>MY구독</i><span id="feed_count" class="b_cnt" style="display: none"><em></em><i class="arrow_down"></i></span></a></li><li onclick="clickcr(this, 'nmy.setting', '', '', event);mySetting.initSetting();return false;" class=""><a href="javascript:;" class="tab_add_setting" style="cursor: pointer;" onkeydown="myCore.keydownServiceTab(event, 5)"><i>자주 사용하는 메뉴</i></a></li></ul></div>
+				<ul id="setting_tab_list" style="display:none"></ul>
+			</div>
+			<span class="slide_btn" onkeydown="myCore.keydownPrevBtn(event)">
+				<a href="javascript:;" id="btn_prev_tab" class="btn_prev" onclick="myCore.moveServiceTab(event, 'prev');" onkeydown="myCore.keydownPrevBtn(event)" style="display: none;"><i>이전판 보기</i></a>
+				<a href="javascript:;" id="btn_next_tab" class="btn_next disabled" onclick="myCore.moveServiceTab(event, 'next');" style="display: inline;"><i>다음판 보기</i></a>
+			</span>
+		</div>
+	</div>
+	<div id="service_pannel" class="service" style="display:none"><div class="svc_noti svc_panel"><div class="svc_banner"></div><div class="svc_scroll" style="-webkit-overflow-scrolling:touch;">알림</div><div class="svc_navigation"><a href="https://noti.naver.com/" target="_parent" class="svc_link_strong" onclick="clickcr(this, 'nmy_fot.alert', '', '', event);"><span class="svc_ico"></span>알림</a> <span class="bar"></span> <a href="https://noti.naver.com/index.nhn?openConfig=noti&amp;subMenuId=all" target="_parent" class="svc_link_weak" onclick="clickcr(this, 'nmy_fot.alertset', '', '', event);">알림 설정</a><div class="task_right"><span class="cnt"><em><i class="blind">현재탭</i>1</em><span>/<i class="blind">전체 탭 갯수</i>5</span></span><a href="#" class="btn_prev" title="이전" onclick="clickcr(this, 'nmy_fot.prev', '', '', event);myCore.moveServicePannel('prev');return false;"><i>이전 탭 보기</i></a><a href="#" class="btn_next" title="다음" onclick="clickcr(this, 'nmy_fot.next', '', '', event);myCore.moveServicePannel('next');return false;"><i>다음 탭 보기</i></a></div></div><div class="ly_alert"><p class="msg"><strong>알림을 모두 삭제하시겠습니까?</strong></p><div class="btns"><button id="ly_alert_confirm">확인</button><button onclick="My.showNotiDeleteLayer('hide')">취소</button></div><button class="btn_close" onclick="My.showNotiDeleteLayer('hide')"><i>레이어 닫기</i></button></div></div><div class="svc_cafe svc_panel"><div class="svc_banner"></div><div class="svc_scroll" style="-webkit-overflow-scrolling:touch;">카페</div><div class="svc_navigation"><a href="https://section.cafe.naver.com/" target="_parent" class="svc_link_strong" onclick="clickcr(this, 'nmy_fot.cafe', '', '', event);My.movePage('https://section.cafe.naver.com/');return false;"><span class="svc_ico"></span>카페</a><div class="task_right"><span class="cnt"><em><i class="blind">현재탭</i>2</em><span>/<i class="blind">전체 탭 갯수</i>5</span></span><a href="#" class="btn_prev" title="이전" onclick="clickcr(this, 'nmy_fot.prev', '', '', event);myCore.moveServicePannel('prev');return false;"><i>이전 탭 보기</i></a><a href="#" class="btn_next" title="다음" onclick="clickcr(this, 'nmy_fot.next', '', '', event);myCore.moveServicePannel('next');return false;"><i>다음 탭 보기</i></a></div></div></div><div class="svc_mail svc_panel"><div class="svc_banner"></div><div class="svc_scroll" style="-webkit-overflow-scrolling:touch;">메일</div><div class="svc_navigation"><a href="https://mail.naver.com/" target="_parent" class="svc_link_strong" onclick="clickcr(this, 'nmy_fot.mail', '', '', event);My.movePage('https://mail.naver.com');return false;"><span class="svc_ico"></span>메일</a> <span class="bar"></span> <a href="https://mail.naver.com/option/mobile" target="_parent" class="svc_link_weak" onclick="clickcr(this, 'nmy_fot.mailset', '', '', event);My.movePage('https://mail.naver.com/option/mobile');return false;">새 메일 통수 설정</a><div class="task_right"><span class="cnt"><em><i class="blind">현재탭</i>3</em><span>/<i class="blind">전체 탭 갯수</i>5</span></span><a href="#" class="btn_prev" title="이전" onclick="clickcr(this, 'nmy_fot.prev', '', '', event);myCore.moveServicePannel('prev');return false;"><i>이전 탭 보기</i></a><a href="#" class="btn_next" title="다음" onclick="clickcr(this, 'nmy_fot.next', '', '', event);myCore.moveServicePannel('next');return false;"><i>다음 탭 보기</i></a></div></div></div><div class="svc_ndrive svc_panel"><div class="svc_banner"></div><div class="svc_scroll" style="-webkit-overflow-scrolling:touch;">클라우드</div><div class="svc_navigation"><a href="https://cloud.naver.com/" target="_parent" class="svc_link_strong" onclick="clickcr(this, 'nmy_fot.ndrive', '', '', event);My.movePage('https://cloud.naver.com/');return false;"><span class="svc_ico"></span>네이버 클라우드</a><div class="task_right"><span class="cnt"><em><i class="blind">현재탭</i>4</em><span>/<i class="blind">전체 탭 갯수</i>5</span></span><a href="#" class="btn_prev" title="이전" onclick="clickcr(this, 'nmy_fot.prev', '', '', event);myCore.moveServicePannel('prev');return false;"><i>이전 탭 보기</i></a><a href="#" class="btn_next" title="다음" onclick="clickcr(this, 'nmy_fot.next', '', '', event);myCore.moveServicePannel('next');return false;"><i>다음 탭 보기</i></a></div></div></div><div class="svc_feed svc_panel"><div class="svc_banner"></div><div class="svc_scroll" style="-webkit-overflow-scrolling:touch;">MY구독</div><div class="svc_navigation"><a href="https://myfeed.naver.com/" target="_parent" class="svc_link_strong" onclick="clickcr(this, 'nmy_fot.sst', '', '', event);"><span class="svc_ico"></span>MY구독</a> <span class="bar"></span> <a href="https://myfeed.naver.com/index.nhn?openConfig=feed" class="svc_link_weak" target="_parent" onclick="clickcr(this, 'nmy_fot.sstset', '', '', event);">구독 설정</a><div class="task_right"><span class="cnt"><em><i class="blind">현재탭</i>5</em><span>/<i class="blind">전체 탭 갯수</i>5</span></span><a href="#" class="btn_prev" title="이전" onclick="clickcr(this, 'nmy_fot.prev', '', '', event);myCore.moveServicePannel('prev');return false;"><i>이전 탭 보기</i></a><a href="#" class="btn_next" title="다음" onclick="clickcr(this, 'nmy_fot.next', '', '', event);myCore.moveServicePannel('next');return false;"><i>다음 탭 보기</i></a></div></div></div></div>
+	<div id="setting_pannel" class="service" style="display:none">
+		<div class="svc_add svc_panel">
+		<div class="svc_scroll">
+			<div class="notice"><p class="msg">자주 사용하는 메뉴를 선택해 주세요.</p><span class="desc">(최소 설정 개수는 5개 입니다.)</span></div>
+			<ul class="column"></ul>
+        </div>
+		<div class="svc_navigation">
+			<button onclick="clickcr(this, 'nmy_set.res', '', '', event);mySetting.resetSetting();">초기화</button>
+			<div class="task_right">
+				<button id="btn_save_setting" onclick="clickcr(this, 'nmy_set.ok', '', '', event);mySetting.submitSetting();">확인</button>
+				<button onclick="clickcr(this, 'nmy_set.cancel', '', '', event);mySetting.cancelSetting();">취소</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    document.domain = "naver.com";
+    
+    var nsc = "navertop.v3";	    
+    var oInfo = {"count":{"note":66,"feed":false,"cafe":311,"mail":0,"noti":6,"ndrive":true}};	
+    oInfo.service = "noti,cafe,mail,ndrive,feed" ? "noti,cafe,mail,ndrive,feed".split(",")
+        : ["noti", "feed", "mail", "cafe", "blog", "npay", "post", "ndrive", "office", "calendar", "happybean", "kin", "memo"];
+    oInfo.happyLogIdType = 0;	
+    oInfo.useUserSetting = !!("noti,cafe,mail,ndrive,feed");
+    oInfo.isApp2Version = "false";
+    var sUserId = "xjuniorx";		
+    var deployEnv = "release";
+    
+    
+    try {
+        var aEventData = [];	
+        if (!aEventData.length) {
+            aEventData = [];
+        }
+    } catch(e) {
+        
+        var aEventData = [];
+    }
+    
+    
+    
+
+    var lazyLoadScript = function(aScriptUrl, fnCallback, bNotCashed) {
+        var nScriptSize = aScriptUrl.length;
+        var nLoadedScriptSize = 0;
+        var elHead = document.getElementsByTagName("head")[0];
+        var sTimeStamp = bNotCashed ? ("?" + new Date().getTime()) : "";
+        for (var i = 0; i < nScriptSize; i++) {
+            var sScriptUrl = aScriptUrl[i];
+            var elScript = document.createElement("script");
+            elScript.type = "text/javascript";
+            elScript.charset = "utf-8";
+            elScript.src = sScriptUrl + sTimeStamp;
+            if ("onload" in elScript) {
+                elScript.onload = function() {
+                    nLoadedScriptSize++;
+                    if (nLoadedScriptSize >= nScriptSize) {
+                        fnCallback();
+                    }
+                }
+            } else {
+                elScript.onreadystatechange = function() {
+                    if (this.readyState == "loaded" || this.readyState == "complete") {
+                        nLoadedScriptSize++;
+                        if (nLoadedScriptSize >= nScriptSize) {
+                            fnCallback();
+                        }
+                    }
+                }
+            }
+
+            elHead.appendChild(elScript);
+        }
+    };
+
+    window.onload = function() {
+        setTimeout(function() {
+            
+            
+            
+            var aScriptList = ["/uglified_my_190702.js"];
+            
+            
+            lazyLoadScript(aScriptList, function() {
+                if (typeof myEof == "undefined") {
+                    __nvl_error("Incompleteness Error : Core JS loading fail. Retry Count = 0");
+                    lazyLoadScript(aScriptList, function() {
+                        if (typeof myEof == "undefined") {
+                            __nvl_error("Incompleteness Error : Core JS loading fail. Retry Count = 1");
+                        }
+                        myCore.init();
+                    }, true);
+                } else {
+                    myCore.init();
+                }
+            })
+        }, 50)
+	}
+__nvl_error = function(m, u, l) {
+    if (typeof m == "object" && typeof m.description == 'string') {
+        m = m + " : " + m.description;
+    }
+    if (!u) {
+        u = document.location;
+    }
+
+	if (!/.js$/.test(u.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ''))) {
+		return;
+	}
+
+    if (!l) {
+        l = 0;
+    }
+
+    if (m && m.match && m.match(/(액세스가 거부되었습니다|사용 권한이 없습니다|Uncaught SecurityError)/)) {
+    	m += " (" + document.domain +"|";
+    	document.domain = "naver.com";
+    	m += document.domain +")";
+    }
+
+    var img = new Image();
+    img.src = "https://cecs.naver.com/?m=" + encodeURIComponent(m) + "&u=" + encodeURIComponent(u) + "&l=" + l;
+    img = null;
+
+    if ("release" == "local") {
+        return false;
+    } else {
+        return true;
+    }
+};
+window.onerror = __nvl_error;
+</script>
+
+
+</body></html>

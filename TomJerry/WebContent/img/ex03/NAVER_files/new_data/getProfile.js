@@ -1,0 +1,1 @@
+myCore.setProfile({"rtn_cd":"0","rtn_msg":"Success","nick_name":"설찌","image_url":"https:\/\/phinf.pstatic.net\/contact\/20181209_197\/1544364952874HcTTS_JPEG\/image.jpg"})
