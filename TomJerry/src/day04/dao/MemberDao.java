@@ -42,7 +42,7 @@ public class MemberDao {
 		// 4. 질의명령 완성하고
 			pstmt.setString(1, id);
 			pstmt.setString(2, pw);
-		// 5. 질의명령 보내고 결과 받고https://github.com/wkdguswo1204/lava_server.git
+		// 5. 질의명령 보내고 결과 받고
 			rs = pstmt.executeQuery();
 			rs.next(); // 한줄 내리고
 			// 변수에 결과 꺼내서 담고

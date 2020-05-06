@@ -34,14 +34,14 @@
 			$('#frm').submit();
 			
 		});
-<%--
+
 		<%
 			String sid = (String)session.getAttribute("SID");
 		%>
---%>	
+	
 		// 로그인 여부에 따른 처리
 		var sid = '<%= sid %>';
-		alert(typeof sid);
+//		alert(typeof sid);
 		if(sid != 'null' && sid.length != 0){
 			$('#loginWin').css('display', 'none');
 			$('#msg').html(sid);
@@ -72,8 +72,9 @@
 			</div>
 	</div>
 	<div class="w3-third" id="msgWin" style="display: none;">
-		<h2 class="w3-col m4 w3-margin-top w3-card-4" style="padding-top: 80px; height: 250px;" id="msg"></h2>
-		<h2 class="w3-col m8 w3-margin-top w3-card-4" style="padding-top: 80px; height: 250px;"> 님은 이미 로그인 했습니다.</h2>
+		<h2 class="w3-col m4 w3-margin-top " style="padding-top: 80px; height: 250px;" id="msg"></h2>
+		<h2 class="w3-col m8 w3-margin-top " style="padding-top: 80px; height: 250px;"> 님은 이미 로그인 했습니다.</h2>
+		
 	</div>
 </body>
 </html>

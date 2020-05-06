@@ -36,4 +36,15 @@
     	<servlet-name>1st_loginProc</servlet-name>
     	<url-pattern>/pre/LoginProc.cls2</url-pattern>
     </servlet-mapping>
+	<!-- 로그인 처리요청 처리 서블릿 매핑 -->
+	<servlet>
+        <servlet-name>1st_Join</servlet-name>
+        <servlet-class>day04.Join</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>1st_Join</servlet-name>
+    	<url-pattern>/pre/Join.cls2</url-pattern>
+    </servlet-mapping>
 </web-app>

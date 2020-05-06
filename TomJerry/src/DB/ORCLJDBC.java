@@ -8,7 +8,6 @@ package DB;
  */
 import java.sql.*;
 public class ORCLJDBC {
-	private Connection con = null;
 	/*
 	 	이 클래스를 new 시키는 순간
 	 	기본적으로 가장 필요한 드라이버 로딩과 커넥션 얻는 작업을 동시에 실행할 것이다.
@@ -26,25 +25,20 @@ public class ORCLJDBC {
 	
 	// 커넥션 얻어오는 함수
 	public Connection getCon() {
-		return getCon("hello", "hello");
-	}
-		
-	public Connection getCon(String id, String password) {
-		Connection con = null;
 		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
 		String user = "hello";
-		String pw = "hello";
+		String password = "hello";
+		Connection con = null;
 		try {
-			con = DriverManager.getConnection(url, user, pw);
-		} catch(Exception e) {
+			con = DriverManager.getConnection(url, user, password);
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		this.con = con;
 		return con;
 	}
-
+	
 	// Statement 얻어오는 함수
-	public Statement getSTMT() {
+	public Statement getSTMT(Connection con) {
 		Statement stmt = null;
 		try {
 			stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
@@ -55,7 +49,7 @@ public class ORCLJDBC {
 	}
 	
 	// PreparedStatement 얻어오는 함수
-	public PreparedStatement getPSTMT(String sql) {
+	public PreparedStatement getPSTMT(Connection con, String sql) {
 		PreparedStatement pstmt = null;
 		try {
 			pstmt = con.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
